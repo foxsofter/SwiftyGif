@@ -10,4 +10,5 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.source_files = 'SwiftyGif/*{.h,.swift}'
   s.swift_version = '5.0'
+  s.pod_target_xcconfig = { "DEFINES_MODULE" => "YES", "EXCLUDED_ARCHS[sdk=iphonesimulator*]" => "i386" }
 end
